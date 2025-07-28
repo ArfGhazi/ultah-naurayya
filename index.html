@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ucapan Ultah Naura</title>
+  <style>
+    body {
+      background-color: #0D1B2A;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 10px 0;
+    }
+    h1 {
+      font-size: 2em;
+      margin-top: 0.5em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Birthday Naura! 🎉</h1>
+    <img src="foto-naura.jpg" alt="Naura" />
+    <p>Wish u all the best! Semoga hari-harimu selalu dipenuhi kebahagiaan, tawa, dan cinta. 🎂</p>
+    <p>— Dari Arfa</p>
+    <audio controls autoplay hidden>
+      <source src="die-for-you.mp3" type="audio/mp3" />
+    </audio>
+  </div>
+  <script>
+    window.onload = function () {
+      confetti({
+        particleCount: 200,
+        spread: 80,
+        origin: { y: 0.4 }
+      });
+      setTimeout(() => {
+        confetti({ particleCount: 100, spread: 120, origin: { x: 0.2, y: 0.6 } });
+        confetti({ particleCount: 100, spread: 120, origin: { x: 0.8, y: 0.6 } });
+      }, 500);
+    };
+  </script>
+</body>
+</html>
